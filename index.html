@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080F24">
+  <meta name="description"
+    content="VIGIAGAS: dispositivo inteligente para detecção de possíveis vazamentos de gás e alertas pelo aplicativo.">
+  <title>VIGIAGAS | Segurança Inteligente</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <div class="container navbar">
+
+      <a href="#inicio" class="brand" aria-label="VIGIAGAS - início">
+        <span class="brand-symbol">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 2C9 7 5 10 5 15a7 7 0 0 0 14 0c0-3-2-5-3-7-1 4-2 5-2 5 0-5-1-8-2-11Z" />
+            <path d="M10 17a2.5 2.5 0 0 0 5 0c0-1-.6-2-1.5-3-.2 1.5-1.2 2-1.2 2" />
+          </svg>
+        </span>
+        <span>VIGIAGAS<small>SUA CASA MAIS SEGURA</small></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+        <a href="#inicio" class="active">Início</a>
+        <a href="#produto">Produto</a>
+        <a href="#funcionamento">Como funciona</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#aplicativo">Aplicativo</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a href="#contato" class="btn btn-primary">Tenho interesse
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M13 5l7 7-7 7" />
+        </svg>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="navLinks">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- INÍCIO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+          <div class="hero-badge"><span class="status-dot"></span> Tecnologia para proteger você</div>
+
+          <h1>
+            Sua segurança.
+            <span class="line">Nosso <span class="gradient-text">compromisso.</span></span>
+          </h1>
+
+          <p class="hero-description">
+            Conheça a VIGIAGAS: uma solução inteligente que detecta
+            possíveis vazamentos de gás e envia alertas para o seu
+            aplicativo. Mais informação para você agir com rapidez.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contato" class="btn btn-primary">
+              Conhecer a VIGIAGAS
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </a>
+
+            <a href="#funcionamento" class="btn btn-outline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="9" />
+                <path d="m10 8 6 4-6 4z" />
+              </svg>
+              Como funciona
+            </a>
+          </div>
+
+          <div class="hero-points">
+            <div class="hero-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+              <span>Mais atenção<br>à segurança</span>
+            </div>
+
+            <div class="hero-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M5 9a11 11 0 0 1 14 0M8 12a6 6 0 0 1 8 0m-5 3a2 2 0 0 1 2 0" />
+                <circle cx="12" cy="18" r="1" />
+              </svg>
+              <span>Conectividade<br>com aplicativo</span>
+            </div>
+
+            <div class="hero-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <rect x="5" y="2" width="14" height="20" rx="3" />
+                <path d="M10 18h4" />
+              </svg>
+              <span>Alertas no<br>seu celular</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-stage" aria-label="Ilustração conceitual do detector VIGIAGAS e aplicativo">
+          <div class="orbit"></div>
+
+          <div class="signal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M2 8a15 15 0 0 1 20 0M5 12a10 10 0 0 1 14 0m-11 4a5 5 0 0 1 8 0" />
+              <circle cx="12" cy="20" r="1" fill="currentColor" />
+            </svg>
+          </div>
+
+          <div class="device">
+            <div class="device-side"></div>
+
+            <div class="device-sensor">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2C9 7 5 10 5 15a7 7 0 0 0 14 0c0-3-2-5-3-7-1 4-2 5-2 5 0-5-1-8-2-11Z" />
+                <path d="M10 17a2.5 2.5 0 0 0 5 0c0-1-.6-2-1.5-3-.2 1.5-1.2 2-1.2 2" />
+              </svg>
+            </div>
+
+            <div class="device-name">VIGIAGAS</div>
+          </div>
+
+          <div class="phone">
+            <div class="phone-camera"></div>
+
+            <div class="phone-inner">
+              <div class="phone-brand">VIGIAGAS</div>
+
+              <div class="app-card">
+                <div class="app-status">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M12 2C9 7 5 10 5 15a7 7 0 0 0 14 0c0-3-2-5-3-7-1 4-2 5-2 5-0-5-1-8-2-11Z" />
+                  </svg>
+                </div>
+                <strong>Monitoramento</strong>
+                <small>Interface ilustrativa do aplicativo.</small>
+              </div>
+
+              <div class="app-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" />
+                </svg>
+                Notificações <span>●</span>
+              </div>
+
+              <div class="app-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+                Status do dispositivo <span>●</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            <div>
+              <strong>Mais tranquilidade</strong>
+              <small>Tecnologia e informação</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAIXA DE DESTAQUES -->
+    <section class="trust-strip">
+      <div class="container trust-grid">
+
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" />
+            <path d="m9 12 2 2 4-4" />
+          </svg>
+          <div>
+            <strong>Mais atenção</strong>
+            <small>À segurança doméstica</small>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <rect x="5" y="2" width="14" height="20" rx="3" />
+            <path d="M10 18h4" />
+          </svg>
+          <div>
+            <strong>Alertas no celular</strong>
+            <small>Informações no aplicativo</small>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="M12 3v18M3 12h18" />
+            <circle cx="12" cy="12" r="9" />
+          </svg>
+          <div>
+            <strong>Tecnologia inteligente</strong>
+            <small>Monitoramento conceitual</small>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="M4 12a8 8 0 0 1 16 0" />
+            <path d="M4 12v5a2 2 0 0 0 2 2h2v-7H4Zm16 0v5a2 2 0 0 1-2 2h-2v-7h4Z" />
+          </svg>
+          <div>
+            <strong>Mais informação</strong>
+            <small>Para agir com rapidez</small>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRODUTO -->
+    <section class="section product-section" id="produto">
+      <div class="container product-grid">
+
+        <div class="product-visual reveal">
+          <div class="device-light">
+            <div class="device-sensor">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2C9 7 5 10 5 15a7 7 0 0 0 14 0c0-3-2-5-3-7-1 4-2 5-2 5 0-5-1-8-2-11Z" />
+                <path d="M10 17a2.5 2.5 0 0 0 5 0c0-1-.6-2-1.5-3-.2 1.5-1.2 2-1.2 2" />
+              </svg>
+            </div>
+            <div class="device-name">VIGIAGAS</div>
+          </div>
+          <div class="product-sticker">Tecnologia inteligente</div>
+        </div>
+
+        <div class="product-copy reveal">
+          <span class="eyebrow">Conheça o produto</span>
+          <h2>Uma nova forma de pensar na <span class="gradient-text">segurança.</span></h2>
+
+          <p>
+            A VIGIAGAS é uma proposta de solução tecnológica desenvolvida
+            para identificar possíveis vazamentos de gás e disponibilizar
+            alertas por meio de um aplicativo. O objetivo é facilitar o
+            acesso às informações e ajudar o usuário a perceber situações
+            que merecem atenção.
+          </p>
+
+          <div class="feature-list">
+
+            <div class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 2C9 7 5 10 5 15a7 7 0 0 0 14 0c0-3-2-5-3-7-1 4-2 5-2 5-0-5-1-8-2-11Z" />
+                </svg>
+              </div>
+              <div>
+                <strong>Detecção de gás</strong>
+                <p>Proposta de identificação de possíveis vazamentos.</p>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" />
+                </svg>
+              </div>
+              <div>
+                <strong>Alertas</strong>
+                <p>Informações para o usuário por meio do aplicativo.</p>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="5" y="2" width="14" height="20" rx="3" />
+                  <path d="M10 18h4" />
+                </svg>
+              </div>
+              <div>
+                <strong>Conectividade</strong>
+                <p>Uma proposta que aproxima o dispositivo do celular.</p>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+              </div>
+              <div>
+                <strong>Informação rápida</strong>
+                <p>Facilidade de acesso aos avisos disponibilizados.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="#contato" class="btn btn-primary">
+            Tenho interesse
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="section how-section" id="funcionamento">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">Entenda a proposta</span>
+          <h2>Como a <span class="gradient-text">VIGIAGAS</span> funciona?</h2>
+          <p class="section-intro">
+            Uma proposta organizada em etapas para facilitar o entendimento
+            do conceito de detecção e envio de informações.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+
+          <article class="step-card reveal">
+            <div class="step-number">01</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M12 2C9 7 5 10 5 15a7 7 0 0 0 14 0c0-3-2-5-3-7-1 4-2 5-2 5-0-5-1-8-2-11Z" />
+              </svg>
+            </div>
+            <h3>Identificação</h3>
+            <p>
+              O conceito do dispositivo prevê a identificação de possíveis
+              vazamentos de gás no ambiente monitorado.
+            </p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-number">02</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" />
+              </svg>
+            </div>
+            <h3>Envio de alertas</h3>
+            <p>
+              A proposta prevê o envio de informações ao aplicativo para
+              comunicar situações que precisam de atenção.
+            </p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-number">03</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <rect x="5" y="2" width="14" height="20" rx="3" />
+                <path d="M10 18h4" />
+              </svg>
+            </div>
+            <h3>Acesso à informação</h3>
+            <p>
+              O usuário consulta as informações apresentadas na interface
+              do aplicativo e pode tomar as medidas adequadas.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="how-note reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 11v5m0-8h.01" />
+          </svg>
+          <p>
+            <strong>Importante:</strong> as ilustrações deste site representam
+            uma proposta visual. A detecção real, o envio de alertas e a
+            confiabilidade dependem do dispositivo, dos sensores, da
+            implementação e dos testes de segurança. A VIGIAGAS não substitui
+            equipamentos certificados nem os procedimentos de emergência.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="section benefits-section" id="beneficios">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">Por que conhecer?</span>
+          <h2>Tecnologia pensada para o dia a dia.</h2>
+          <p class="section-intro">
+            Conheça as principais propostas da VIGIAGAS e como elas se
+            relacionam com o acesso à informação sobre possíveis vazamentos.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+
+          <article class="benefit-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </div>
+            <h3>Atenção à segurança</h3>
+            <p>Uma proposta tecnológica voltada à identificação de situações que exigem atenção.</p>
+          </article>
+
+          <article class="benefit-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" />
+              </svg>
+            </div>
+            <h3>Notificações</h3>
+            <p>Possibilidade de visualizar alertas e informações pela interface do aplicativo.</p>
+          </article>
+
+          <article class="benefit-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="5" y="2" width="14" height="20" rx="3" />
+                <path d="M10 18h4" />
+              </svg>
+            </div>
+            <h3>Praticidade</h3>
+            <p>Uma proposta que reúne o dispositivo e o acesso às informações em um só conceito.</p>
+          </article>
+
+          <article class="benefit-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 7v5l3 2" />
+              </svg>
+            </div>
+            <h3>Mais informação</h3>
+            <p>Acesso aos avisos disponibilizados para ajudar na compreensão da situação.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- APLICATIVO -->
+    <section class="section app-section" id="aplicativo">
+      <div class="container app-grid">
+
+        <div class="app-copy reveal">
+          <span class="eyebrow">Conectado com você</span>
+          <h2>As informações na palma da sua mão.</h2>
+
+          <p>
+            A proposta da VIGIAGAS inclui uma interface de aplicativo para
+            apresentar informações sobre o monitoramento e os possíveis
+            alertas do dispositivo.
+          </p>
+
+          <ul class="app-list">
+            <li>
+              <span class="check">✓</span>
+              Interface ilustrativa de monitoramento.
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Apresentação visual de notificações.
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Informações organizadas em um só lugar.
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Conceito visual simples e intuitivo.
+            </li>
+          </ul>
+
+          <a href="#contato" class="btn btn-primary">
+            Saiba mais
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="app-demo reveal">
+          <div class="large-phone">
+            <div class="large-phone-inner">
+
+              <div class="phone-brand">VIGIAGAS</div>
+
+              <div class="app-greeting">Olá!</div>
+              <div class="app-subtitle">Resumo ilustrativo do monitoramento</div>
+
+              <div class="safe-card">
+                <div class="safe-circle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" />
+                    <path d="m9 12 2 2 4-4" />
+                  </svg>
+                </div>
+                <strong>Visão geral</strong>
+                <p>Exemplo ilustrativo de status do dispositivo.</p>
+              </div>
+
+              <div class="phone-metric">
+                <span>Dispositivo</span>
+                <strong>Exemplo</strong>
+              </div>
+
+              <div class="phone-metric">
+                <span>Notificações</span>
+                <strong>Visualização</strong>
+              </div>
+
+              <div class="phone-metric">
+                <span>Conexão</span>
+                <strong>Ilustrativa</strong>
+              </div>
+
+              <div class="app-bottom">
+                Interface conceitual da <span>VIGIAGAS</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="app-floating">
+            Interface intuitiva
+            <small>Informações organizadas</small>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CHAMADA FINAL -->
+    <section class="section safety-section">
+      <div class="container">
+        <div class="safety-box reveal">
+
+          <div>
+            <span class="eyebrow">Conheça a proposta</span>
+            <h2>Mais atenção à segurança da sua casa.</h2>
+            <p>
+              Quer conhecer melhor a proposta VIGIAGAS? Entre em contato
+              para solicitar informações sobre o conceito do dispositivo
+              e sua proposta de monitoramento.
+            </p>
+          </div>
+
+          <a href="#contato" class="btn btn-primary">
+            Fale conosco
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contact-section" id="contato">
+      <div class="container contact-grid">
+
+        <div class="contact-copy reveal">
+          <span class="eyebrow">Entre em contato</span>
+          <h2>Vamos conversar sobre a VIGIAGAS?</h2>
+
+          <p>
+            Preencha o formulário para preparar sua mensagem e demonstrar
+            interesse na proposta do dispositivo. Você poderá copiar o
+            texto ou abrir seu aplicativo de e-mail.
+          </p>
+
+          <div class="contact-info">
+
+            <div class="contact-info-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="m3 7 9 6 9-6" />
+                </svg>
+              </div>
+              <div>
+                <strong>Mensagem de contato</strong>
+                <small>Envie suas informações pelo formulário.</small>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+              </div>
+              <div>
+                <strong>Solicitação de informações</strong>
+                <small>Conte-nos qual é o seu interesse.</small>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </div>
+              <div>
+                <strong>VIGIAGAS</strong>
+                <small>Sua casa mais segura.</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+
+          <h3>Envie sua mensagem</h3>
+          <p class="form-description">
+            Preencha os campos abaixo para preparar seu contato.
+          </p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome completo *</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+            </div>
+
+            <div class="form-group">
+              <label for="interesse">Tenho interesse em *</label>
+              <select id="interesse" name="interesse" required>
+                <option value="">Selecione uma opção</option>
+                <option value="Conhecer o dispositivo">Conhecer o dispositivo</option>
+                <option value="Conhecer o aplicativo">Conhecer o aplicativo</option>
+                <option value="Parceria">Parceria</option>
+                <option value="Outras informações">Outras informações</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Sua mensagem *</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            Preparar mensagem
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 2 11 13" />
+              <path d="m22 2-7 20-4-9-9-4Z" />
+            </svg>
+          </button>
+
+          <div class="form-feedback" id="formFeedback" aria-live="polite"></div>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="container footer-main">
+
+      <div class="footer-about">
+        <a href="#inicio" class="brand">
+          <span class="brand-symbol">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2C9 7 5 10 5 15a7 7 0 0 0 14 0c0-3-2-5-3-7-1 4-2 5-2 5-0-5-1-8-2-11Z" />
+            </svg>
+          </span>
+          <span>VIGIAGAS<small>SUA CASA MAIS SEGURA</small></span>
+        </a>
+
+        <p>
+          Tecnologia voltada à identificação de possíveis vazamentos de gás
+          e ao envio de informações por aplicativo. Mais atenção aos detalhes
+          que importam.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Navegação</h3>
+        <a href="#inicio">Início</a>
+        <a href="#produto">O produto</a>
+        <a href="#funcionamento">Como funciona</a>
+        <a href="#beneficios">Benefícios</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Saiba mais</h3>
+        <a href="#aplicativo">Aplicativo</a>
+        <a href="#contato">Contato</a>
+        <a href="#contato">Solicitar informações</a>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="currentYear"></span> VIGIAGAS. Todos os direitos reservados.</span>
+      <a href="#inicio">Voltar ao início ↑</a>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
